@@ -32,15 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
             imageContainer.appendChild(image)
     } 
   }
-
-
-
-
-
-
-
-
-
-
-
 })
