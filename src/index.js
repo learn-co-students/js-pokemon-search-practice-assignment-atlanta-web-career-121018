@@ -45,19 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
             image.setAttribute('data-action', 'flip');
             image.className="toggle-sprite";
             image.setAttribute('src',filteredPokemon[i]['sprites']['front']);
-            image.addEventListener('click', function(event) {
-              if image.data-action === 
-
-
+            image.addEventListener('click', function(event) { 
+              if (filteredPokemon[i]['sprites']['front'] === event.target.src) { 
+                event.target.src = filteredPokemon[i]['sprites']['back']
+              } else {
+                event.target.src = filteredPokemon[i]['sprites']['front']
+              }
             })
             imageContainer.appendChild(image)
     }  
   } 
   
-
-
-
-
-
-
 })
